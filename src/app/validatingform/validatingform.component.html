@@ -1,0 +1,37 @@
+<p>validatingform works!</p>
+<div class="container">
+    <div class="col-6 mx-auto shadow-lg">
+        <div class="p-3">
+            <form #fgroup="ngForm">
+                <input type="text" class="form-control my-2" name="firstname" [(ngModel)]="firstname" placeholder="Firstname" #fname="ngModel" required [class.is-valid]="fname.valid && fname.dirty" [class.is-invalid]="fname.invalid && fname.dirty" minlength="5">
+                <div *ngIf="fname.invalid && fname.touched">
+                    <span class="text-danger" *ngIf="fname?.errors?.['required']">This field is required</span>
+                    <span class="text-danger" *ngIf="fname?.errors?.['minlength']">The minimum length required is 5 characters</span>
+                </div>
+                <!-- <div>
+                    {{fname.valid}}
+                </div> -->
+                <!-- <div>
+                    {{fname.touched}}
+                </div>
+                <div>
+                    {{fname.dirty}}
+                </div>
+                <div>
+                    {{fname.untouched}}
+                </div>
+                <div>
+                    {{fname.pristine}}
+                </div> -->
+                <input type="text" class="form-control my-2" name="city"  [(ngModel)]="city" placeholder="city" #Ccity="ngModel" required [class.is-valid]="Ccity.valid && Ccity.dirty" [class.is-invalid]="Ccity.invalid && Ccity.dirty" minlength="5">
+                <div *ngIf="Ccity.invalid && Ccity.touched">
+                    <span class="text-danger" *ngIf="Ccity?.errors?.['required']">This field is required</span>
+                    <span class="text-danger" *ngIf="Ccity?.errors?.['minlength']">The minimum length required is 5 characters</span>
+                </div>
+                
+                <button class="btn btn-primary w-100"  (click)="submit()" [disabled]="fgroup.invalid">Submit</button>
+                <input type="checkbox">
+            </form>
+        </div>
+    </div>
+</div>

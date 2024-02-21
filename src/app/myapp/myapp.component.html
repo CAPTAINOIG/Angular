@@ -1,0 +1,63 @@
+<div class="bodystyleCOntainerone">
+    <!-- <p>myapp works!</p>
+        <a routerLink="/home">Home</a> -->
+    <div class="BtnREspon">
+        <div>
+            <button class="btn btn-info" (click)="check()">Home</button>
+        </div>
+        <!-- <div class="mx-2">
+            <button class="btn btn-danger" (click)="DelectBtn">Delect</button>
+        </div> -->
+    </div>
+
+    <div class="styleCOntainerone ">
+        <div class="d-flex justify-content-around ">
+            <div>
+                <p>First-Name</p>
+            </div>
+            <div>
+                <p>{{this.user.first_name}}</p>
+            </div>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-around">
+            <div>
+                <p>Last-Name</p>
+            </div>
+            <div>
+                <p>{{this.user.last_name}}</p>
+            </div>
+        </div>
+        <hr/>
+
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <p>Email</p>
+            </div>
+            <div>
+                <p>{{ this.user.Email }}</p>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <p>phone-number</p>
+            </div>
+            <div>
+                <p>{{ this.user.phone_number }}</p>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <p>Gender</p>
+            </div>
+            <div>
+                <p> {{ this.user.Gender }}</p>
+            </div>
+        </div>
+    </div>
+</div>

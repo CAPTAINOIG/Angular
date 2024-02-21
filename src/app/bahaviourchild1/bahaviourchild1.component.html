@@ -1,0 +1,12 @@
+<div>
+    <div class="shadow" *ngFor="let list of studentarray let i=index" (click)="sendlist(list, i)">
+        <div class="my-4 p-5">
+            <p>Firstname: {{list.firstname}}</p>
+            <p>Lastname: {{list.lastname}}</p>
+            <p>Age: {{list.age}}</p>
+            <p>Email: {{list.email}}</p>
+            <p>Address: {{list.address}}</p>
+            <p>password: {{list.password}}</p>
+        </div>
+    </div>
+</div>

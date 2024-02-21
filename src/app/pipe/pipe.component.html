@@ -1,0 +1,42 @@
+<p>pipe works!</p>
+<p>{{ "agriculture" | uppercase }}</p>
+<p>{{ "HOME" | lowercase }}</p>
+<hr />
+<div>{{ time | date }}</div>
+<div>{{ time | date : "short" }}</div>
+<div>{{ time | date : "long" }}</div>
+<div>{{ time | date : "full" }}</div>
+<div>{{ time | date : "shortTime" }}</div>
+<div>{{ time | date : "longTime" }}</div>
+<div>{{ time | date : "longDate" }}</div>
+<div>{{ time | date : "shortDate" }}</div>
+<div>{{ time | date : "fullDate" }}</div>
+<div>{{ time | date : "d/M/Y" }}</div>
+
+<hr />
+
+<p>{{ 10000 | currency }}</p>
+<p>{{ 10000 | currency : "EUR" }}</p>
+<p>{{ 10000 | currency : "CAD" }}</p>
+<p>{{ 10000 | currency : "NGN" : "symbol-narrow" }}</p>
+<p>{{ 10000 | currency : "GHC" : "code" }}</p>
+<p>{{ 10000 | currency : "EUR" : "code" }}</p>
+
+<hr />
+<!-- it takes parameter par 1, where to start par 2 the end -->
+<p>{{ "investment" | slice : 2 : 6 }}</p>
+
+<hr />
+<!-- class work -->
+<p>{{ "information" | slice : 2 }}</p>
+<p>{{ "information" | slice : 2 : 6 }}</p>
+<p>{{ "information" | slice : 2 : 5 }}</p>
+<p>{{ "information" | slice : 0 : 4 }}</p>
+<p>{{ "information" | slice : 0 : 6 }}</p>
+<p>{{ "information" | slice : 2 : 8 }}</p>
+<p>{{ "information" | slice : 5 : 8 }}</p>
+<p>{{ "information" | slice : 6 : 8 }}</p>
+
+<hr />
+
+<p>{{ 2 / 4 | percent }}</p>

@@ -1,0 +1,27 @@
+<div class="shadow p-5 row gap-3">
+    <div class="d-flex">
+        <div class="w-25">Firstname:</div>
+        <input type="text" [(ngModel)]="bahavior_obj.firstname" value="{{bahavior_obj.firstname}}" >
+    </div>
+    <div class="d-flex">
+        <div class="w-25">Lastname:</div>
+        <input type="text" value="{{bahavior_obj.lastname}}">
+    </div>
+    <div class="d-flex">
+        <div class="w-25">Email:</div>
+        <input type="text" value="{{bahavior_obj.email}}">
+    </div>
+    <div class="d-flex">
+        <div class="w-25">Password:</div>
+        <input type="text" value="{{bahavior_obj.password}}">
+    </div>
+    <div class="d-flex">
+        <div class="w-25">Address:</div>
+        <input type="text" value="{{bahavior_obj.address}}">
+    </div>
+    <div class="d-flex">
+        <div class="w-25">Age:</div>
+        <input type="text" value="{{bahavior_obj.age}}">
+    </div>
+    <button (click)="Del()" class="btn btn-danger">Delete</button>
+</div>

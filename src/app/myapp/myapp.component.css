@@ -1,0 +1,23 @@
+.styleCOntainerone{
+    border: 2px solid #b4b4b4;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white  !important;
+    width: 70% !important;
+    padding: 30px;
+}
+.bodystyleCOntainerone{
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.479);
+    height: 100vh;
+}
+.BtnREspon{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex !important;
+}
